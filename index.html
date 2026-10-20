@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="dashboard-layout">
+        
+        <!-- Global Header Component -->
+        <div id="header-placeholder"></div>
+
+        <!-- Global Navbar Component -->
+        <div id="navbar-placeholder"></div>
+
+        <div class="content-wrapper">
+            
+            <!-- Global Sidebar Component -->
+            <div id="sidebar-placeholder"></div>
+
+            <div class="main-panel">
+                
+                <!-- Main Dashboard & Assistant Container -->
+                <div class="dashboard-body">
+                    
+                    <!-- Primary Content Area -->
+                    <main class="main-content" id="main-content-area">
+                        
+                        <!-- Header with Action Buttons -->
+                        <div class="page-header">
+                            <h2>Customer 360</h2>
+                            <div class="header-actions">
+                                <button class="secondary-btn text-blue">Edit Layout</button>
+                                <button class="icon-btn" title="Reload Dashboard">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path></svg>
+                                </button>
+                                <button class="secondary-btn" id="toggle-assistant-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn-icon"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                    Support
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- ROW 1: Profile and Core Metrics -->
+                        <div class="dashboard-row row-1-wrapper">
+                            
+                            <!-- Left Section: Profile Card -->
+                            <div id="profile-card-placeholder" class="row-1-left">
+                                <div class="dummy-card" style="height: 120px;">Profile Card Placeholder</div>
+                            </div>
+                            
+                            <!-- Right Section: Metric Cards Grid -->
+                            <div class="data-cards-padded-container">
+                                <div class="data-cards-grid">
+                                    
+                                    <div class="metric-card">
+                                        <span class="metric-title">Lifetime Value</span>
+                                        <div class="metric-icon icon-green">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="6" width="20" height="12" rx="2"></rect><circle cx="12" cy="12" r="2"></circle><path d="M6 12h.01M18 12h.01"></path></svg>
+                                        </div>
+                                        <span class="metric-value">$125,000</span>
+                                        <span class="metric-subtext">Total Spend</span>
+                                    </div>
+
+                                    <div class="metric-card">
+                                        <span class="metric-title">Open Cases</span>
+                                        <div class="metric-icon icon-orange">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="8" width="18" height="12" rx="2"></rect><path d="M16 8V6a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path><line x1="12" y1="12" x2="12" y2="16"></line></svg>
+                                        </div>
+                                        <span class="metric-value">2</span>
+                                        <a href="#" class="metric-link">View cases &rarr;</a>
+                                    </div>
+
+                                    <div class="metric-card">
+                                        <span class="metric-title">Active Orders</span>
+                                        <div class="metric-icon icon-blue">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg>
+                                        </div>
+                                        <span class="metric-value">5</span>
+                                        <a href="#" class="metric-link">View orders &rarr;</a>
+                                    </div>
+
+                                    <div class="metric-card">
+                                        <span class="metric-title">Products Owned</span>
+                                        <div class="metric-icon icon-purple">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
+                                        </div>
+                                        <span class="metric-value">8</span>
+                                        <a href="#" class="metric-link">View assets &rarr;</a>
+                                    </div>
+
+                                    <div class="metric-card">
+                                        <span class="metric-title">Last Purchase</span>
+                                        <div class="metric-icon icon-teal">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg>
+                                        </div>
+                                        <span class="metric-value">10</span>
+                                        <span class="metric-subtext">Days Ago</span>
+                                    </div>
+
+                                    <div class="metric-card">
+                                        <span class="metric-title">Health Score</span>
+                                        <div class="metric-icon icon-green">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
+                                        </div>
+                                        <span class="metric-value">92%</span>
+                                        <span class="metric-subtext text-green">Healthy</span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 2: Customer Details and Operational Data -->
+                        <div class="dashboard-row row-2-wrapper">
+                            
+                            <!-- Left Column: Customer Profile & Sources -->
+                            <div class="row-2-left">
+                                
+                                <div class="sf-card list-card">
+                                    <h3 class="card-title">Customer Profile</h3>
+                                    <div class="kv-list">
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Customer ID</span><span class="kv-value">CUST-00012345</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg> Account Name</span><span class="kv-value">Acme Corporation</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</span><span class="kv-value">john.smith@acme.com</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> Phone</span><span class="kv-value">+1 (415) 555-1234</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg> Preferred Language</span><span class="kv-value">English</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg> Preferred Channel</span><span class="kv-value">Email, Phone, Portal</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="10" r="3"></circle><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path></svg> Region</span><span class="kv-value">North America</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg> Time Zone</span><span class="kv-value">PST (GMT-08:00)</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg> Customer Segment</span><span class="kv-value">High Value</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg> Consent Status</span><span class="badge-opted-in">Opted In</span></div>
+                                        <div class="kv-item"><span class="kv-label"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> Unified Profile ID</span><span class="kv-value fw-bold">UP-987654321</span></div>
+                                    </div>
+                                </div>
+
+                                <div class="sf-card list-card" style="display: flex; flex-direction: column;">
+                                    <h3 class="card-title">Connected Sources</h3>
+                                    
+                                    <div class="sources-grid-2col">
+                                        <div class="source-col">
+                                            <div class="source-item"><span class="check-icon">✔</span> Salesforce CRM</div>
+                                            <div class="source-item"><span class="check-icon">✔</span> Service Cloud</div>
+                                            <div class="source-item"><span class="check-icon">✔</span> Marketing Cloud</div>
+                                            <div class="source-item"><span class="check-icon">✔</span> Commerce Cloud</div>
+                                        </div>
+                                        <div class="source-col">
+                                            <div class="source-item"><span class="check-icon">✔</span> ERP</div>
+                                            <div class="source-item"><span class="check-icon">✔</span> Billing System</div>
+                                            <div class="source-item"><span class="check-icon">✔</span> External Systems</div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="unified-status">
+                                        <span>Last Unified: Oct 20, 2026 03:47 PM</span>
+                                        <button class="refresh-btn" title="Refresh Sources">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                <polyline points="23 4 23 10 17 10"></polyline>
+                                                <polyline points="1 20 1 14 7 14"></polyline>
+                                                <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <!-- Right Column: Timeline & Operational Cards -->
+                            <div class="row-2-right">
+                                
+                                <div class="sf-card timeline-card">
+                                    <div class="timeline-header">
+                                        <h3 class="card-title">Customer Journey Timeline</h3>
+                                        <span class="timeline-year">2026</span>
+                                    </div>
+                                    
+                                    <div class="timeline-track-container">
+                                        <button class="nav-arrow">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                                        </button>
+                                        
+                                        <div class="timeline-track">
+                                            <div class="timeline-line"></div>
+                                            <div class="node"><div class="dot blue"></div><div class="date">Apr 01</div><div class="title">Website Visit</div><div class="desc">Product Page</div></div>
+                                            <div class="node"><div class="dot blue"></div><div class="date">Apr 05</div><div class="title">Product Purchase</div><div class="desc">Order #ORD-1045</div></div>
+                                            <div class="node"><div class="dot red"></div><div class="date">Apr 08</div><div class="title">Support Case<br>Created</div><div class="desc">Case #0001234</div></div>
+                                            <div class="node"><div class="dot blue"></div><div class="date">Apr 15</div><div class="title">Renewal<br>Opportunity</div><div class="desc">FY27 Renewal</div></div>
+                                            <div class="node"><div class="dot orange"></div><div class="date">Apr 20</div><div class="title">Campaign Click</div><div class="desc">Spring Promotion</div></div>
+                                            <div class="node"><div class="dot green"></div><div class="date">Apr 25</div><div class="title">Payment<br>Received</div><div class="desc">$4,500</div></div>
+                                            <div class="node"><div class="dot teal"></div><div class="date">Apr 30</div><div class="title">Feedback<br>Submitted</div><div class="desc"></div></div>
+                                        </div>
+                                        
+                                        <button class="nav-arrow">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                                <!-- Operational Grid Cards -->
+                                <div class="row-2-bottom-cards">
+                                    
+                                    <div class="sf-card sub-card">
+                                        <div class="sub-card-header">
+                                            <div class="header-left">
+                                                <span class="icon-box green-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span> 
+                                                <strong>Sales 360</strong>
+                                            </div>
+                                            <a href="#" class="view-all">View All</a>
+                                        </div>
+                                        <div class="sub-card-body">
+                                            <span class="section-label">Open Opportunities (2)</span>
+                                            <table class="data-table">
+                                                <tr><th>Opportunity</th><th>Stage</th><th>Amount</th></tr>
+                                                <tr><td><a href="#" class="cell-link">Renewal FY27</a></td><td>Negotiation</td><td>$250,000</td></tr>
+                                                <tr><td><a href="#" class="cell-link">New Product</a></td><td>Discovery</td><td>$150,000</td></tr>
+                                            </table>
+                                        </div>
+                                        <div class="sub-card-footer split-4">
+                                            <div class="stat-mini"><span>Quotes</span><strong>3</strong></div>
+                                            <div class="stat-mini"><span>Meetings</span><strong>2</strong></div>
+                                            <div class="stat-mini"><span>Renewals</span><strong>1</strong></div>
+                                            <div class="stat-mini"><span>Pipeline</span><strong>$400,000</strong></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sf-card sub-card">
+                                        <div class="sub-card-header">
+                                            <div class="header-left">
+                                                <span class="icon-box pink-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></span> 
+                                                <strong>Service 360</strong>
+                                            </div>
+                                            <a href="#" class="view-all">View All</a>
+                                        </div>
+                                        <div class="sub-card-body">
+                                            <span class="section-label">Open Cases (2)</span>
+                                            <table class="data-table">
+                                                <tr><th>Case</th><th>Priority</th><th>Status</th></tr>
+                                                <tr><td><a href="#" class="cell-link">Network Issue</a></td><td class="text-red">High</td><td class="text-orange">In Progress</td></tr>
+                                                <tr><td><a href="#" class="cell-link">Billing Query</a></td><td class="text-orange">Medium</td><td class="text-red">Open</td></tr>
+                                            </table>
+                                        </div>
+                                        <div class="sub-card-footer split-2">
+                                            <div class="stat-mini"><span>Avg. Resolution Time</span><strong>18 hrs</strong></div>
+                                            <div class="stat-mini"><span>CSAT Score</span><strong>4.6/5</strong></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sf-card sub-card">
+                                        <div class="sub-card-header">
+                                            <div class="header-left">
+                                                <span class="icon-box purple-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span> 
+                                                <strong>Assets & Products</strong>
+                                            </div>
+                                        </div>
+                                        <div class="sub-card-body asset-list-container">
+                                            <div class="asset-item">
+                                                <div class="asset-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path></svg></div>
+                                                <div class="asset-info">
+                                                    <strong>Acme Pro Suite</strong>
+                                                    <span>Subscription <span class="badge-active">Active</span></span>
+                                                    <span class="expiry">Expires Dec 31, 2027</span>
+                                                </div>
+                                            </div>
+                                            <div class="asset-item">
+                                                <div class="asset-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path></svg></div>
+                                                <div class="asset-info">
+                                                    <strong>Analytics Add-on</strong>
+                                                    <span>Subscription <span class="badge-active">Active</span></span>
+                                                    <span class="expiry">Expires Dec 31, 2026</span>
+                                                </div>
+                                            </div>
+                                            <div class="asset-item">
+                                                <div class="asset-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><path d="M12 8v4l3 3"></path></svg></div>
+                                                <div class="asset-info">
+                                                    <strong>Support Plus Plan</strong>
+                                                    <span>Service Plan <span class="badge-active">Active</span></span>
+                                                    <span class="expiry">Expires Dec 31, 2026</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="sub-card-footer split-2">
+                                            <div class="stat-mini"><span>Total Products</span><strong>8</strong></div>
+                                            <div class="stat-mini"><span>Assets</span><strong>12</strong></div>
+                                        </div>
+                                    </div>
+
+                                    <div class="sf-card sub-card">
+                                        <div class="sub-card-header">
+                                            <div class="header-left">
+                                                <span class="icon-box orange-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"></circle><circle cx="20" cy="21" r="1"></circle><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path></svg></span> 
+                                                <strong>Orders & Commerce</strong>
+                                            </div>
+                                            <a href="#" class="view-all">View All</a>
+                                        </div>
+                                        <div class="sub-card-body">
+                                            <div class="flex-row-stats mb-15">
+                                                <div class="stat-col"><span>Total Orders</span><strong>25</strong></div>
+                                                <div class="stat-col"><span>Open Orders</span><strong>2</strong></div>
+                                                <div class="stat-col"><span>Returns</span><strong>1</strong></div>
+                                            </div>
+                                            <div class="aov-section mb-15">
+                                                <span class="bullet-dot"></span> <span>AOV</span> <strong>$5,200</strong>
+                                            </div>
+                                            <span class="section-label">Recent Order</span>
+                                            <table class="data-table borderless">
+                                                <tr><td><a href="#" class="cell-link">ORD-1045</a></td><td>Apr 05, 2026</td><td>$4,500</td><td class="text-green">Delivered</td></tr>
+                                                <tr><td><a href="#" class="cell-link">ORD-1038</a></td><td>Mar 22, 2026</td><td>$5,200</td><td class="text-green">Delivered</td></tr>
+                                            </table>
+                                        </div>
+                                        <div class="sub-card-footer link-only">
+                                            <a href="#" class="view-all-link">View All Orders &rarr;</a>
+                                        </div>
+                                    </div>
+
+                                    <div class="sf-card sub-card">
+                                        <div class="sub-card-header">
+                                            <div class="header-left">
+                                                <span class="icon-box green-bg"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"></line><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></span> 
+                                                <strong>Billing & Finance</strong>
+                                            </div>
+                                            <a href="#" class="view-all">View All</a>
+                                        </div>
+                                        <div class="sub-card-body">
+                                            <div class="flex-row-finance mb-15">
+                                                <div class="finance-info">
+                                                    <span>Outstanding Balance</span>
+                                                    <strong>$1,250.00</strong>
+                                                </div>
+                                                <button class="pay-now-btn">Pay Now</button>
+                                            </div>
+                                            <div class="flex-row-stats mb-15">
+                                                <div class="stat-col"><span>Paid Invoices</span><strong>12</strong></div>
+                                                <div class="stat-col"><span>Total Invoiced</span><strong>$24,850.00</strong></div>
+                                            </div>
+                                            <span class="section-label">Recent Invoice</span>
+                                            <table class="data-table borderless">
+                                                <tr><td><a href="#" class="cell-link">INV-2026-04G8</a></td><td>Apr 25, 2026</td><td>$1,250.00</td><td><span class="badge-paid">Paid</span></td></tr>
+                                                <tr><td><a href="#" class="cell-link">INV-2026-04D1</a></td><td>Apr 01, 2026</td><td>$2,500.00</td><td><span class="badge-paid">Paid</span></td></tr>
+                                            </table>
+                                        </div>
+                                        <div class="sub-card-footer link-only">
+                                            <a href="#" class="view-all-link">View All Invoices &rarr;</a>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- ROW 3: Supplementary Insights -->
+                        <div class="dashboard-row row-3-wrapper">
+                            
+                            <!-- Card 1: Marketing Engagement -->
+                            <div class="sf-card sub-card">
+                                <div class="sub-card-header">
+                                    <div class="header-left">
+                                        <span class="icon-box purple-bg">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path></svg>
+                                        </span> 
+                                        <strong>Marketing Engagement</strong>
+                                    </div>
+                                    <a href="#" class="view-all">View All</a>
+                                </div>
+                                <div class="sub-card-body">
+                                    <div class="marketing-stats-row mb-15">
+                                        <div class="stat-mini">
+                                            <span>Email Open Rate</span>
+                                            <strong>72%</strong>
+                                            <span class="trend-up">&uarr; 12%</span>
+                                        </div>
+                                        <div class="stat-mini">
+                                            <span>Campaign Response</span>
+                                            <strong>65%</strong>
+                                            <span class="trend-up">&uarr; 4%</span>
+                                        </div>
+                                        <div class="stat-mini">
+                                            <span>Website Visits</span>
+                                            <strong>24</strong>
+                                            <span class="trend-up">&uarr; 8%</span>
+                                        </div>
+                                        <div class="stat-mini">
+                                            <span>Events Attended</span>
+                                            <strong>2</strong>
+                                            <span class="trend-neutral">-</span>
+                                        </div>
+                                        <div class="stat-mini">
+                                            <span>SMS Interaction</span>
+                                            <strong>8</strong>
+                                            <span class="trend-up">&uarr; 2%</span>
+                                        </div>
+                                    </div>
+                                    
+                                    <span class="section-label">Recent Campaigns</span>
+                                    <table class="data-table borderless">
+                                        <tr>
+                                            <td><a href="#" class="cell-link">Spring Promotion</a></td>
+                                            <td>Apr 10, 2026</td>
+                                            <td class="text-green">Responded</td>
+                                        </tr>
+                                        <tr>
+                                            <td><a href="#" class="cell-link">Product Update Webinar</a></td>
+                                            <td>Apr 02, 2026</td>
+                                            <td class="text-green">Attended</td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                            
+                            <!-- Card 2: AI Insights -->
+                            <div class="sf-card sub-card">
+                                <div class="sub-card-header">
+                                    <div class="header-left">
+                                        <span class="icon-box blue-bg">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"></path></svg>
+                                        </span> 
+                                        <strong>AI Insights</strong>
+                                    </div>
+                                </div>
+                                <div class="sub-card-body ai-insights-layout">
+                                    
+                                    <div class="ai-col text-center">
+                                        <span class="section-label">Customer Health</span>
+                                        <div class="gauge-container">
+                                            <svg viewBox="0 0 36 36" class="circular-gauge">
+                                                <path class="gauge-bg" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="50, 100" />
+                                                <path class="gauge-value" d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" stroke-dasharray="46, 100" />
+                                                <text x="18" y="16" class="gauge-percentage">92%</text>
+                                                <text x="18" y="22" class="gauge-label">Healthy</text>
+                                            </svg>
+                                        </div>
+                                        <p class="health-desc">Strong relationship<br>Low risk<br><a href="#" class="view-details-link">View Details</a></p>
+                                    </div>
+
+                                    <div class="ai-col border-left-right">
+                                        <span class="section-label">Insights</span>
+                                        <div class="insight-list">
+                                            <div class="insight-item">
+                                                <svg class="icon-green" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                                                <span>High product adoption in Analytics Add-on.</span>
+                                            </div>
+                                            <div class="insight-item">
+                                                <svg class="icon-red" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                                <span>Renewal due in 7 months.</span>
+                                            </div>
+                                            <div class="insight-item">
+                                                <svg class="icon-blue" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                                <span>Prefers email communication.</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="ai-col text-center">
+                                        <span class="section-label">Churn Risk</span>
+                                        <strong class="risk-value text-green">Low</strong>
+                                        <span class="risk-sub">Risk Score</span>
+                                        <a href="#" class="view-details-link mt-auto">Why this score?</a>
+                                    </div>
+
+                                </div>
+                            </div>
+                            
+                            <!-- Card 3: Recent Interactions -->
+                            <div class="sf-card sub-card">
+                                <div class="sub-card-header">
+                                    <div class="header-left">
+                                        <span class="icon-box blue-bg">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                        </span> 
+                                        <strong>Recent Interactions</strong>
+                                    </div>
+                                    <a href="#" class="view-all">View All</a>
+                                </div>
+                                <div class="sub-card-body">
+                                    <div class="interaction-list">
+                                        
+                                        <div class="interaction-item">
+                                            <div class="interaction-time">Yesterday</div>
+                                            <div class="interaction-marker"><div class="dot-ring green"></div></div>
+                                            <div class="interaction-details">
+                                                <strong>Customer called support</strong>
+                                                <span>Case #0001234 updated</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="interaction-item">
+                                            <div class="interaction-time">2 Days Ago</div>
+                                            <div class="interaction-marker"><div class="dot-ring blue"></div></div>
+                                            <div class="interaction-details">
+                                                <strong>Quote Generated</strong>
+                                                <span>Quote #Q-1042</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="interaction-item">
+                                            <div class="interaction-time">5 Days Ago</div>
+                                            <div class="interaction-marker"><div class="dot-ring red"></div></div>
+                                            <div class="interaction-details">
+                                                <strong>Order Created</strong>
+                                                <span>Order #ORD-1045</span>
+                                            </div>
+                                        </div>
+
+                                        <div class="interaction-item">
+                                            <div class="interaction-time">7 Days Ago</div>
+                                            <div class="interaction-marker"><div class="dot-ring blue"></div></div>
+                                            <div class="interaction-details">
+                                                <strong>Campaign Clicked</strong>
+                                                <span>Spring Promotion Email</span>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </main>
+
+                    <!-- RIGHT PANEL: Agentforce Assistant (Matching Screenshot) -->
+                    <aside class="assistant-panel" id="assistant-panel">
+                        
+                        <div class="assistant-header">
+                            <div class="ast-header-left">
+                                <div class="bot-icon-wrapper">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="bot-icon">
+                                        <path d="M12 2a2 2 0 0 1 2 2c0 .74-.4 1.39-1 1.73V7h1a5 5 0 0 1 5 5v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5a5 5 0 0 1 5-5h1V5.73A2 2 0 0 1 8 4a2 2 0 0 1 2-2h2z"></path>
+                                        <circle cx="9" cy="13" r="1"></circle>
+                                        <circle cx="15" cy="13" r="1"></circle>
+                                    </svg>
+                                </div>
+                                <h4>Agentforce Assistant</h4>
+                            </div>
+                            <div class="ast-header-right">
+                                <span class="ast-action-icon" title="Minimize">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+                                </span>
+                                <span class="ast-action-icon close-assistant" id="close-assistant-btn" title="Close">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="assistant-body">
+                            
+                            <div class="assistant-scroll-area">
+                                
+                                <div class="assistant-greeting">
+                                    <p><strong>Hi John,</strong><br>How can I help you today?</p>
+                                </div>
+                                
+                                <div class="quick-actions">
+                                    <button class="action-pill">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg> 
+                                        Show pending issues
+                                    </button>
+                                    <button class="action-pill">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                        Summarize customer history
+                                    </button>
+                                    <button class="action-pill">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                        Generate renewal quote
+                                    </button>
+                                    <button class="action-pill">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+                                        What offers should I propose?
+                                    </button>
+                                    <button class="action-pill">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="23 4 23 10 17 10"></polyline><polyline points="1 20 1 14 7 14"></polyline><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path></svg>
+                                        Show all open cases
+                                    </button>
+                                </div>
+
+                                <div class="assistant-section">
+                                    <h5>AI Summary</h5>
+                                    <p class="summary-text">John is a high value customer with strong engagement. However, there are 2 open cases that need attention.</p>
+                                </div>
+
+                                <div class="assistant-section">
+                                    <h5>Top Recommendation</h5>
+                                    <div class="churn-card">
+                                        <h6 class="text-red">High Churn Risk</h6>
+                                        <p class="churn-label">Reason:</p>
+                                        <ul class="churn-list">
+                                            <li>2 unresolved cases</li>
+                                            <li>No purchase in 90 days</li>
+                                        </ul>
+                                        <p class="churn-label mt-10">Recommended Action:</p>
+                                        <p class="churn-action">Offer retention discount</p>
+                                        <button class="churn-btn">Create Retention Offer</button>
+                                    </div>
+                                </div>
+
+                                <div class="assistant-section">
+                                    <h5>Next Best Actions</h5>
+                                    <div class="nba-list">
+                                        <button class="action-pill">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                                            Create Case
+                                        </button>
+                                        <button class="action-pill">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                                            Schedule Call
+                                        </button>
+                                        <button class="action-pill">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                            Generate Quote
+                                        </button>
+                                        <button class="action-pill">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                            Send Renewal Offer
+                                        </button>
+                                        <button class="action-pill">
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                                            Escalate Issue
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                            
+                            <!-- Chat Input Box -->
+                            <div class="chat-input-area">
+                                <input type="text" class="chat-input" placeholder="Ask anything...">
+                                <button class="chat-send-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                </button>
+                            </div>
+
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

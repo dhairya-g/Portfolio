@@ -1,0 +1,75 @@
+/* Sidebar Container */
+.left-sidebar {
+    width: 120px; /* Slim width */
+    background-color: #032d60; /* Dark Navy Blue */
+    display: flex;
+    flex-direction: column;
+    color: #ffffff;
+    box-sizing: border-box;
+    height: calc(100vh - 94px); /* Pura page height minus Header(50) & Navbar(44) */
+    overflow-y: auto; /* Agar items zyada hon toh scroll ho jaye */
+}
+
+/* Scrollbar hide karne ke liye taaki sleek lage */
+.left-sidebar::-webkit-scrollbar {
+    width: 0px;
+}
+
+.sidebar-menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    text-align: center;
+    color: #a8b2c7; /* Light grey text inactive ke liye */
+    gap: 6px;
+}
+
+.sidebar-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+}
+
+/* Active Highlight */
+.sidebar-item.active {
+    background-color: #0176d3; /* Salesforce Bright Blue */
+    color: #ffffff;
+}
+
+.sidebar-item span {
+    font-size: 11px;
+    font-weight: 400;
+}
+
+.sidebar-item svg {
+    width: 20px;
+    height: 20px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* Collapse Button at bottom */
+.sidebar-footer {
+    margin-top: auto; /* Flexbox jadu: ye button ko humesha niche chipka dega */
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.collapse-btn {
+    flex-direction: row; /* Icon aur text side-by-side */
+    gap: 8px;
+    padding: 16px 0;
+}

@@ -1,0 +1,42 @@
+/* Navbar Container */
+.sub-navbar {
+    background-color: #ffffff;
+    border-bottom: 1px solid #c9c9c9;
+    padding: 0 120px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* List Styling */
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px; /* Links ke beech ka space */
+}
+
+/* Individual Links */
+.nav-item a {
+    text-decoration: none;
+    color: #444444;
+    font-size: 13px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+    padding: 12px 0; /* Hover ya border area ke liye */
+}
+
+.nav-item a:hover {
+    color: #0176d3; /* Salesforce Blue on hover */
+}
+
+/* Active State (Home) */
+.nav-item.active a {
+    color: #181818;
+    font-weight: 600;
+    /* Niche ek choti si blue line aayegi active menu par */
+    border-bottom: 2px solid #0176d3; 
+}
